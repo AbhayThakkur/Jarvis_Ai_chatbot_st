@@ -4,10 +4,9 @@ import random
 import requests
 
 # Load the environment variables from .env
-load_dotenv()
 
 # Get API key
-API_KEY = st.secrets("OPENROUTER_API_KEY")
+API_KEY = st.secrets["OPENROUTER_API_KEY"]
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 def chat_with_openrouter(prompt):
