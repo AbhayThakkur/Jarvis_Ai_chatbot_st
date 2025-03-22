@@ -2,8 +2,14 @@ import streamlit as st
 import time
 import random
 import requests
+import os
+from dotenv import load_dotenv
 
-API_KEY = "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"  # Replace with your OpenRouter key
+# Load the environment variables from .env
+load_dotenv()
+
+# Get API key
+API_KEY = os.getenv("OPENROUTER_API_KEY")
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 def chat_with_openrouter(prompt):
