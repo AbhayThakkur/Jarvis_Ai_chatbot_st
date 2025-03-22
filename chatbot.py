@@ -3,7 +3,7 @@ import time
 import random
 import requests
 
-API_KEY = "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"  # Replace with your OpenRouter key
+API_KEY = "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"  # Replace with your OpenRouter key
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 def chat_with_openrouter(prompt):
